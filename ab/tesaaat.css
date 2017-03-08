@@ -1,0 +1,501 @@
+.inner {
+    position: relative;
+    height: 100%;
+}
+
+.vcenter {
+    text-align: left;
+    font-size: 2.2vw;
+    font-family: GothamThin;
+    letter-spacing: -0.06em;
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    top: 21%;
+}
+
+.gl-title {
+    font-family: GothamBold;
+    letter-spacing: -0.06em;
+    color: #0078BC;
+    margin-bottom: 38px;
+    font-size: 48px;
+}
+
+.gl-title .thin {
+    font-family: GothamLight;
+    letter-spacing: -0.06em;
+}
+
+.gl-static-adwards {
+    background-color: white;
+}
+
+.bleed-middle {
+    z-index: 2;
+}
+
+.bleed {
+    z-index: 1;
+    margin-top: -350px;
+}
+
+h2.warranties {
+    font-family: GothamLight;
+    letter-spacing: -0.07em;
+}
+
+h3.warranties {
+    font-family: GothamLight;
+    letter-spacing: -0.07em;
+    font-size: 36px !important;
+    margin-top: 40px;
+}
+
+h4.warranties {
+    color: #898C8D;
+    font-family: GothamThin;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+}
+
+p.warranties {
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+h3.floater {
+    font-family: GothamBook;
+    letter-spacing: -0.06em;
+    font-size: 37px !important;
+    text-align: left;
+    margin-top: 40px;
+}
+
+h4.floater {
+    color: #898C8D;
+    font-family: GothamLight;
+    letter-spacing: -0.06em;
+    text-transform: uppercase;
+    font-size: 22px;
+    text-align: left;
+}
+
+p.floater {
+    font-family: Helvetica;
+    font-size: 16px;
+    text-align: left;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    height: 90%;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.table .cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.top-spacing {
+    margin-top: 40px;
+}
+
+.about-text {
+    font-family: GothamBook;
+    letter-spacing: -0.06em;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: left;
+}
+
+.gl-static-adwards {
+    visibility: hidden;
+    min-height: 300px
+}
+
+.gl-home .container {
+    padding: 0;
+    height: 0;
+}
+
+.gl-home {
+    min-height: 0 !important;
+}
+
+.gl-home.gl-blue {
+    background: none;
+    padding-bottom: 0 !important;
+}
+
+.gl-minibooker {
+    margin-top: 4vw;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    border: none;
+}
+
+.gl-minibooker-home {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08);
+    height: 0;
+    float: right;
+}
+
+.gl-home.gl-blue {
+    margin-top: 8px;
+}
+
+.logo-holder {
+    padding-left: 15px;
+}
+
+.left-float {
+    padding-right: 50px;
+}
+
+.right-float {
+    padding-left: 50px;
+}
+
+.cell {
+    padding-top: 10px;
+}
+
+.mob-img {
+    margin-bottom: -40px;
+    text-align: center;
+    background: #EEF9FD;
+}
+
+.about-text {
+    font-size: 24px;
+}
+
+.warranties.col-sm-4 {
+    padding-right: 25px;
+}
+
+.warranties.col-sm-4:last-child {
+    padding-right: 0;
+}
+
+.table {
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+.icon-cloud {
+    display: inline-block;
+    float: left;
+}
+
+.alt-cloud {
+    display: inline-block;
+    font-family: GothamThin;
+    font-size: 30px;
+    float: left;
+    padding-left: 15px;
+    height: 45px;
+    line-height: 45px;
+}
+
+.gl-testimonials {
+    background-color: #ffffff;
+    height: 292px;
+    margin-top: 100px;
+}
+
+.testimonial-row {
+    font-family: GothamBook;
+    font-size: 14px;
+    text-align: left;
+    vertical-align: middle;
+    padding: 10px 0;
+    line-height: 30px;
+}
+
+p.testimonial {
+    font-family: 'PlayfairDisplayItalic';
+    font-size: 21px;
+    line-height: 32px;
+    color: #b0aeaf;
+}
+
+.marketing-row {
+    font-family: GothamBook;
+    line-height: 56px;
+    font-size: 30px;
+}
+
+#testimonials {
+    height: 150px;
+}
+
+.author {
+    text-transform: uppercase;
+}
+
+.owl-controls {
+    position: absolute;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 5px 7px;
+    filter: Alpha(Opacity=50);
+    opacity: .5;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #869791;
+}
+
+.owl-theme .owl-controls {
+    text-align: left;
+    z-index: 1;
+}
+
+.la-line {
+    text-align: right;
+    border-bottom: 2px solid #DCDCDC;
+    margin-top: -95px;
+}
+
+.la-line img {
+    padding-right: 75px;
+}
+
+.bottom_content h1 {
+    font-family: GothamThin;
+    font-size: 48px;
+    letter-spacing: -0.06em;
+    line-height: 33px;
+}
+
+.bottom_content h3 {
+    font-family: GothamLight;
+    font-size: 22px !important;
+    text-transform: uppercase;
+    color: #959493;
+    padding-bottom: 9px;
+    letter-spacing: -0.06em;
+}
+
+.bottom_content p {
+    font-size: 19px;
+    color: #959493;
+    font-family: GothamBook;
+    padding-bottom: 23px;
+}
+
+.rel_parent {
+    padding-top: 81px;
+}
+
+.iphone_pic img {
+    max-width: 100%;
+}
+
+.hero_discount {
+    font-size: 52px;
+    font-family:GothamBold;
+    line-height: 45px;
+    white-space:nowrap;
+}
+.hero_code{
+    font-size:25px;
+    letter-spacing: 0;
+    white-space:nowrap;
+    padding-top: 50px;
+}
+.register_btn{
+     display: inline-block;
+    background:#2373BA;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 219px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 0;
+    white-space: nowrap;
+    text-decoration: none;
+    font-family:GothamBook;
+}
+.register_btn:hover{
+    text-decoration: none;
+    color:white;
+}
+
+.limo_holder{
+    padding-left:291px;
+}
+@media(min-width: 1200px) {
+    .gl-static-adwards {
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+        margin-top: -10vw !important;
+        padding-top: 80px !important;
+        padding-bottom: 10px !important;
+    }
+    .gl-minibooker {
+        margin-top: 4vw;
+    }
+}
+
+@media (max-width: 1199px) {
+    #testimonials {
+        height: 200px;
+    }
+    .gl-testimonials {
+        margin-top: 175px;
+    }
+    .bottom_content {
+        padding-bottom: 60px;
+    }
+    .iphone_pic {
+        padding-top: 56px;
+    }
+    .vcenter {
+        top:10%;
+    }
+    .hero_discount{
+        font-size: 41px;
+    }
+    .hero_code{
+        font-size: 22px;
+    }
+    .limo_holder {
+        padding-left: 80px;
+    }
+}
+
+@media screen and ( max-width: 993px) {
+    .gl-minibooker {
+        margin-top: 43vw
+    }
+    .gl-float {
+        display: none
+    }
+    .gl-testimonials {
+        margin-top: 720px;
+    }
+    #testimonials {
+        height: 223px;
+    }
+    .hero_discount {
+        text-align: center;
+    }
+    .hero_code{
+         text-align: center;
+    }
+    .vcenter {
+        position: relative;
+        margin: 0 auto;
+        top:16%;
+    }
+    .register_btn_holder{
+        text-align:center;
+    }
+}
+
+@media screen and ( max-width: 769px) {
+
+    .col-sm-4.bleed-middle {
+     display: none
+ }
+
+    .gl-testimonials {
+        margin-top: 865px;
+    }
+    .mob-img img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .left-float {
+        padding-right: 0;
+    }
+    .right-float {
+        padding-left: 0;
+    }
+    .cell {
+        padding-top: 0;
+        padding-left: 6px;
+    }
+    .icon-cloud {
+        padding-left: 15px;
+    }
+
+
+
+}
+
+@media screen and ( max-width: 640px) {
+    .gl-testimonials {
+        margin-top: 950px;
+        height: 465px;
+    }
+    #testimonials {
+        height: 350px;
+    }
+    .hero_discount {
+        font-size: 30px;
+        line-height: 24px;
+        padding-bottom:10px;
+    }
+    .hero_code{
+        font-size:13px;
+    }
+    .register_btn{
+        height: 30px;
+        line-height: 30px;
+    }
+
+}
+
+@media screen and (max-width:420px) {
+    .gl-testimonials {
+        margin-top: 1050px;
+    }
+    .bottom_content h1 {
+        line-height: 48px;
+    }
+    .bottom_content img {
+        padding-bottom: 10px;
+    }
+    .hero_discount {
+        font-size: 17px;
+    }
+    .hero_code{
+        font-size:11px;
+    }
+    .register_btn{
+        height: 23px;
+        line-height: 23px;
+        font-size: 13px;
+        width: 180px;
+    }
+    .rel_parent {
+        padding-top: 41px;
+    }
+    .vcenter {
+        top:-10%;
+    }
+
+}

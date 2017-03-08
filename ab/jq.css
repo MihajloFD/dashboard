@@ -1,0 +1,70 @@
+.vcenter { text-align: center; vertical-align: middle; background-color: rgba(0, 0, 0, 0.5); padding-top: 14.5vw; height: 43vw; max-height: 623px; font-size: 2.2vw; font-family: GothamBook; letter-spacing: -0.06em; }
+.gl-title { font-family: GothamBold; letter-spacing: -0.06em; color: #0078BC; margin-bottom: 38px; font-size: 48px; }
+.gl-title .thin { font-family: GothamLight; letter-spacing: -0.06em; }
+.gl-static-adwards { background-color: white; }
+.bleed-middle { z-index: 2; }
+.bleed { z-index: 1; margin-top: -350px; }
+h2.warranties { font-family: GothamLight; letter-spacing: -0.07em; }
+h3.warranties { font-family: GothamLight; letter-spacing: -0.07em; font-size: 36px !important; margin-top: 40px; }
+h4.warranties { color: #898C8D; font-family: GothamThin; letter-spacing: -0.06em; text-transform: uppercase; }
+p.warranties { font-family: Helvetica; font-size: 14px; line-height: 23px; }
+h3.floater { font-family: GothamBook; letter-spacing: -0.06em; font-size: 37px !important; text-align: left; margin-top: 40px; }
+h4.floater { color: #898C8D; font-family: GothamLight; letter-spacing: -0.06em; text-transform: uppercase; font-size: 22px; text-align: left; }
+p.floater { font-family: Helvetica; font-size: 16px; text-align: left; }
+.table { display: table; width: 100%; height: 90%; padding-right: 8%; padding-left: 8%; }
+.table .cell { display: table-cell; text-align: center; vertical-align: middle; }
+.top-spacing { margin-top: 40px; }
+.about-text { font-family: GothamBook; letter-spacing: -0.06em; font-size: 24px; line-height: 35px; text-align: left; }
+.gl-static-adwards {visibility: hidden;min-height:300px}
+.gl-home .container { padding: 0; height: 0px;}
+
+.gl-home {
+    min-height: 0 !important;
+}
+
+.gl-home.gl-blue {
+    background: none;
+    padding-bottom: 0 !important;
+}
+.gl-minibooker {
+    margin-top:27vw;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.08);
+    border: none;
+}
+.gl-minibooker-home {
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.08);
+    height:0;
+    float:right;
+}
+
+@media(min-width: 1200px) {
+  .gl-static-adwards { box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.08);
+  margin-top: -10vw !important; padding-top: 80px !important;
+  padding-bottom: 10px !important; }
+  .gl-minibooker {
+    margin-top:4vw;
+  }
+}
+.about-text{
+font-size:24px;}
+.warranties.col-sm-4 {
+    padding-right: 25px;
+}
+.warranties.col-sm-4:last-child {
+    padding-right: 0;
+}
+.table{
+padding-right:1%;
+padding-left:1%;
+}
+@media screen and (
+    max-width: 993px) {
+.gl-minibooker{ margin-top:43vw}
+.gl-float{display:none}
+.gl-about-us{margin-top:720px;}
+ }
+@media screen and (
+    max-width: 768px) {
+.col-sm-4.bleed-middle{
+display:none}
+ }

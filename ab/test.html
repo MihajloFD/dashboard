@@ -1,0 +1,181 @@
+</div></div></div></div></div></div></div></div></div></div></div></div></div>
+
+<style type="text/css">
+$css.data
+
+.gl-hero {
+    background: url($hero_image.data) no-repeat center center;
+    height: 43vw;
+    max-height: $hero_image.max_height.data;
+    background-size: cover;
+    color: white;
+    margin-top:3px;
+}
+.inner{
+    max-height: $hero_image.max_height.data;
+}
+</style>
+
+<div class="slider hidden-xs bookermarketing">
+    <div id="owl-demo" class="owl-carousel">
+	#foreach ($s in $slide.getSiblings())
+        <div class="item">
+            <div class="container">
+                <div class="gl-hero">
+                  <div class="inner container">
+                     <div class="vcenter">
+                        <div class="row">
+                            <div class="col-lg-6">
+                               $hero_image.hero_content.data
+                            </div>
+                        </div>
+                     </div>
+                  </div>
+                </div>
+            </div>
+		</div>
+        #end
+	</div>
+</div>
+<div class="slider hidden-xs bookermarketing">
+    <div id="owl-demo" class="owl-carousel">
+	#foreach ($s in $slide.getSiblings())
+        <div class="item">
+            
+		</div>
+        #end
+	</div>
+</div>
+
+
+
+<div class="gl-testimonials row testimonial-row">
+    <div class="container">
+        <div class="row testimonial-row">
+            <div class="col-lg-12">
+                <p class="icon-cloud">
+                    <img src="$image.data" alt="$image.alt.data" />
+                </p>
+                <p class="alt-cloud">$image.alt.data</p>
+            </div>
+        </div>
+        <div class="row testimonial-row">
+            <div class="col-lg-12">
+                <div class="col-lg-12" style="padding-left:15px">
+                    <div id="testimonials" style="font-size:16px" class="owl-carousel owl-theme">
+                        #foreach ($t as $testimonial.getSiblings())
+                        <div class="item">
+                            <p class="testimonial">
+                                $t.data
+                            </p>
+                            <p class="author">~ $t.author.data</p>
+                        </div>
+                        #end
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 la-line">
+            <img alt="car-city" src="$image.bottom_line_img.data">
+        </div>
+    </div>
+</div>
+#foreach ($service_group as $services.getSiblings())
+<div class="container top-spacing">
+    <div class="col-sm-12">
+        #foreach($service as $service_group.service_title.getSiblings())
+        <div class="warranties col-sm-4">
+            <h3 class="warranties ">
+                $service.data
+            </h3>
+            <h4 class="warranties ">
+                $service.service_subtitle.data
+            </h4>
+            <p class="warranties ">
+                $service.service_content.data
+            </p>
+        </div>
+        #end
+    </div>
+</div>
+<div class="container top-spacing">
+    <div class="col-sm-12" style="z-index: 2">
+        <div class="row">
+            <div class=" mob-img visible-xs col-sm-12">
+                <img src=$service_group.service_float_image.data style=$service_group.service_float_image.service_float_image_style.data />
+            </div>
+            #if( $service_group.service_float_image.service_float_left.data == 'true' || $service_group.service_float_image.service_float_left.data == 'TRUE' )
+
+            <div class="col-sm-4 bleed-middle hidden-xs" style="background-color: rgb(238,249,253);min-height: 350px; margin-top: 40px;">
+                <img src=$service_group.service_float_image.data style=$service_group.service_float_image.service_float_image_style.data />
+            </div>
+            #end
+            <div class="col-sm-8 bleed-middle" style="background-color: rgb(238,249,253);height: 350px; margin-top: 40px;">
+                <div class="table">
+                    <div class="cell">
+                         #if( $service_group.service_float_image.service_float_left.data == 'true' || $service_group.service_float_image.service_float_left.data == 'TRUE' )
+                        <div class="left-float">
+                        #else
+                        <div class="right-float">
+                        #end
+                        <h3 class="floater">
+                            $service_group.service_float_image.service_float_title.data</h3>
+                        <h4 class="floater">
+                            $service_group.service_float_image.service_float_subtitle.data</h4>
+                        <p class="floater">
+                            $service_group.service_float_image.service_float_content.data</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            #if( $service_group.service_float_image.service_float_left.data.equals('true') || $service_group.service_float_image.service_float_left.data.equals('TRUE') )
+            
+            #else
+            <div class="col-sm-4 bleed-middle" style="background-color: rgb(238,249,253);height: 350px; margin-top: 40px;">
+                <img src=$service_group.service_float_image.data style=$service_group.service_float_image.service_float_image_style.data />
+            </div>
+            #end
+        </div>
+    </div>
+</div>
+#if( $service_group.service_float_image.service_float_left.data.equals('true') || $service_group.service_float_image.service_float_left.equals('TRUE') )
+<div class="container-fluid hidden-xs">
+    <div class="col-sm-6 col-lg-6 bleed" style="background-color: rgb(238,249,253);height: 350px; margin-top: -350px; z-index: 1;">
+        &nbsp;</div>
+</div>
+#else
+<div class="container-fluid hidden-xs">
+    <div class="col-sm-6 col-sm-push-6 col-lg-6 col-lg-push-6 bleed" style="background-color: rgb(238,249,253);height: 350px; margin-top: -350px; z-index: 1;">
+        &nbsp;</div>
+</div>
+#end
+#end
+
+<div class="container">
+    <div class="col-sm-12">
+        <div class="row">
+            <div class="col-md-4 hidden-sm hidden-xs">
+                <div class="iphone_pic">
+                      <img src="$bottom_phone_img.data"/>
+                </div>
+            </div>
+            <div class="col-md-8 rel_parent">
+                <div class="bottom_content">
+                   <h1>$bottom_phone_img.bottom_title.data</h1>
+                   <h3>$bottom_phone_img.bottom_subtitle.data</h3>
+                   <p>$bottom_phone_img.bottom_text_content.data</p>
+                   <a href="https://itunes.apple.com/app/apple-store/id459161879?pt=547342&ct=groundlink.com%2Fcar-service-app&mt=8"> <img src="$bottom_phone_img.bottom_store_img1.data"></a>
+                   <a href="https://play.google.com/store/apps/details?id=com.groundlink&referrer=utm_source%3Dgroundlink.com%26utm_medium%3Dwebpage%26utm_term%3Ddownload%2520app%26utm_content%3Dcar%2520service%2520app%26utm_campaign%3Dapp%2520page%26anid%3Dadmob"> <img src="$bottom_phone_img.bottom_store_img2.data"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+$code.data
+</script>
+<div class="container"><div><div><div><div><div><div><div><div><div><div><div><div>

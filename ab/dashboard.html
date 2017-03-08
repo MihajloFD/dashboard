@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--  <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="style.css">
+    <!--
+  <script src="jquery-1.11.0.js"></script>
+  <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>  
+-->
+    <script src="https://use.fontawesome.com/4d6f339f72.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+<!--         Navbar -->
+        <nav class="main-navbar navbar navbar-toggleable-md navbar-inverse bg-inverse">
+<!--             Navbar content -->
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+            <a class="navbar-brand" href="#"><img src="image/GL%20LOGO@2x.png" alt="logo_img" /></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="btn navbar-nav mr-auto">
+<!--
+                    <li class="nav-item"> 
+                        <a class="toggle nav-link" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Business: Staples Inc <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>   
+                    </li>
+-->
+                    <li class="nav-item dropdown">
+                        <a class="business-btn nav-link toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            Business: Staples Inc <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="Preview">
+                            <a class="dropdown-item" href="#">Dropdown Link 1</a>
+                            <a class="dropdown-item" href="#">Dropdown Link 2</a>
+                            <a class="dropdown-item" href="#">Dropdown Link 3</a>
+                        </div>
+                    </li>
+                </ul>
+<!--             BOOK A RIDE button -->
+                <div class="dropdown btn book-btn-dropdown">
+                  <button class="btn toggle bg-inverse" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="book-btn">
+                            BOOK A RIDE
+                      </div>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <small class="text-muted dropdown-item disabled">Select the passinger. If more than <br/> one, select the primary passenger.</small>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Myself</a>
+                    <a class="dropdown-item" href="#">Guest</a>
+                    <a class="dropdown-item disabled" href="#">MY GROUP: Sales team</a>
+                    <a class="dropdown-item" href="#">John Doe</a>
+                    <a class="dropdown-item" href="#">John Doe</a>
+                    <a class="dropdown-item" href="#">John Doe</a>
+                    <a class="dropdown-item" href="#">John Doe</a>
+                    <a class="dropdown-item" href="#">John Doe</a>
+                    <a class="dropdown-item" href="#">John Doe</a>
+                    <a class="dropdown-item disabled" href="#">MY GROUP: Sales team</a>
+                    <a class="dropdown-item" href="#">John Doe</a>
+                    <a class="dropdown-item" href="#">John Doe</a>
+                  </div>
+                </div>
+
+                <div class="btn-group btn">
+<!--              Notification-->
+                  <button type="button" class="notification-btn btn toggle bg-inverse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="not-btn-holder">
+                          <img src="image/ICONS%20_%20White%20_%20Notifications@2x.png"  alt="chat-img"/>
+                          <div class="no-notification">5</div>
+                      </div>
+                  </button>
+                    
+                      <div class="dropdown-menu dropdown-menu-right notification-dropdown">
+                          <div class="arrow-up"></div>
+                        <div class="dropdown-header">
+                            <span>Notification</span>
+                            <span class="text-primary">Mark all as Read</span>
+                            <span class="text-primary">Mute</span>
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                          </div>
+                          <div class="dropdown-divider"></div>
+                          <div class="dropdown-item warning-item">
+                              <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                              <span class="h6">Huricane Warning in Florida</span>
+                              <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+                              <p >Pickup time for ride <b>#538942</b>#538942 for <strong>Gary <br>Johnson</strong> is adjuced to 11:40AM. Please contact him</p>
+                          </div>
+                        <div class="dropdown-item">
+                              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                              <span class="h6">Pickup Confirmation</span>
+                              <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+                              <p >Ride <b>#538942</b>#538942 for <strong>Gary Johnson</strong> is adjuced to 11:40AM. Please contact him</p>
+                          </div>
+                          <div class="dropdown-item">
+                              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                              <span class="h6">Pickup Confirmation</span>
+                              <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+                              <p >Ride <b>#538942</b>#538942 for <strong>Gary Johnson</strong> is adjuced to 11:40AM. Please contact him</p>
+                          </div>
+                          <div class="dropdown-item">
+                              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                              <span class="h6">Pickup Confirmation</span>
+                              <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+                              <p >Ride <b>#538942</b>#538942 for <strong>Gary Johnson</strong> is adjuced to 11:40AM. Please contact him</p>
+                          </div>
+                          <div class="dropdown-item">
+                              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                              <span class="h6">Pickup Confirmation</span>
+                              <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+                              <p >Ride <b>#538942</b>#538942 for <strong>Gary Johnson</strong> is adjuced to 11:40AM. Please contact him</p>
+                          </div>
+                          <div class="dropdown-item">
+                              <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                              <span class="h6">Pickup Confirmation</span>
+                              <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+                              <p >Ride <b>#538942</b>#538942 for <strong>Gary Johnson</strong> is adjuced to 11:40AM. Please contact him</p>
+                          </div>
+                          <div class="text-primary text-right show"><a href="#" >Show all</a></div>
+                    </div>
+                    
+                </div>
+<!--            User-->
+                <div class="user">
+                    <button type="button" class="bg-inverse btn"  aria-haspopup="true" aria-expanded="false">
+                        <div class="user-avatar-holder">
+                            <div class="user-avatar">ng</div>
+                            <div class="yellow-btn"><div class="inside"></div></div>
+                        </div>
+                    </button>
+                    <button type="button" class="btn bg-inverse"  aria-haspopup="true" aria-expanded="false">
+                        <div class="user_info btn">
+                            <p class="name">Nensy G.</p>
+                            <p class="profession">Travel Aranger</p>
+                        </div>
+                    </button>
+                    <button class="btn bg-inverse">
+                    <i class="fa fa-angle-down down" aria-hidden="true"></i>
+                    </button>
+                </div>
+                
+                <!--
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+-->
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+                <header id="v-manu" class="navbar navbar-inverse bg-inverse navbar-fixed-top col-lg-2">
+                    <button class="navbar-toggler hidden-sm-up pull-xs-right" data-toggle="collapse" data-target="#exCollapsingNavbar2">&#9776</button>
+                    <nav class="navbar-toggleable-xs pull-xs-right" id="exCollapsingNavbar2">
+                        <ul class="nav navbar-nav navbar-inverse bg-inverse">
+                            <li class="nav-item active-blue vbtn"> <a class="nav-link" href="#"><i class="fa-nav fa fa-tachometer" aria-hidden="true"></i>dashboard</a> </li>
+                            <li class="nav-item vbtn"> <a class="nav-link " href="#"><i class="fa-nav fa fa-car" aria-hidden="true"></i>ride<span class="redbtn">!</span></a> </li>
+                            <li class="nav-item vbtn"> <a class="nav-link " href="#"><i class="fa-nav fa fa-users" aria-hidden="true"></i>groups</a> </li>
+                            <li class="nav-item vbtn"> <a class="nav-link " href="#"><i class="fa-nav fa fa-male" aria-hidden="true"></i>passingers<span class="bluebtn">3</span></a> </li>
+                            <li class="nav-item vbtn"> <a class="nav-link " href="#"><i class="fa-nav fa fa-shield" aria-hidden="true"></i>ride policies</a> </li>
+                            <li class="nav-item vbtn"> <a class="nav-link " href="#"><i class="fa-nav fa fa-bell-o" aria-hidden="true"></i>reports</a> </li>
+                            <li class="nav-item vbtn"> <a class="nav-link " href="#"><i class="fa-nav fa fa-shield" aria-hidden="true"></i>rewards</a> </li>
+                            <li class="nav-item vbtn"> <a class="nav-link " href="#"><i class="fa-nav fa fa-shield" aria-hidden="true"></i>payments</a> </li>
+                            <li class="nav-item vbtn"> <a class="nav-link " href="#"><i class="fa-nav fa fa-shield" aria-hidden="true"></i>invoices</a> </li>
+                            <li class="nav-item vbtn"> <a class="nav-link " href="#"><i class="fa-nav fa fa-shield" aria-hidden="true"></i>account info</a> </li>
+                            <li class="nav-item vbtn"> <a class="nav-link " href="#"><i class="fa-nav fa fa-shield" aria-hidden="true"></i>settings</a> </li>
+                            <li class="nav-item vbtn"> <a class="nav-link " href="#"><i class="fa-nav fa fa-shield" aria-hidden="true"></i>resources</a> </li>
+                            <li class="nav-item vbtn"> <a class="nav-link " href="#"><i class="fa-nav fa fa-shield" aria-hidden="true"></i>resources</a> </li>
+                        </ul>
+                    </nav>
+                    <form class="serachForm ">
+                        <input type="text" placeholder="Search" />
+                        <button type="submit" class="iconSearch "><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </header>
+                <div class="col-md-7">
+                    <main id="main">
+<!--
+                        <div class="warning">
+                            <div class="warning-content"> <i class="fa fa-times close" aria-hidden="true"></i>
+                                <h4>
+                                Weather Alert: Severe snow storm forecast for New York area tomorrow, Dec 6th!
+                            </h4>
+                                <p> Please monitor your schaduled rides and alocate more travel time for any new bookinds. We will keep you informed on any updates or changes to you ride. </p>
+                            </div>
+                        </div>
+-->
+                        <div class="map">
+                            <iframe></iframe>
+                        </div>
+                        <nav class="navbar navbar-toggleable-md navbar-light">
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav number-nav">
+                                    <li class="nav-item active"> <a class="nav-link" href="#"><span class="num-ride">7</span> <span class="text-ride">Rides in <br/> progres</span>  <span class="sr-only">(current)</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" href="#"><span class="num-ride">23</span> <span class="text-ride">upcoming <br/>rides</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" href="#"><span class="num-ride">56</span> <span class="text-ride">saved<br/> rides</span></a> </li>
+                                    <li class="nav-item"> <a class="nav-link" href="#"><span class="num-ride">32</span> <span class="text-ride"> coplete<br/> rides</span></a> </li>
+                                </ul>
+                            </div>
+                        </nav>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Passenger</th>
+                                    <th>Ride #</th>
+                                    <th>Started<i class="fa fa-angle-down" aria-hidden="true"></i></th>
+                                    <th>Pickup</th>
+                                    <th>Destination</th>
+                                    <th class="text-right">Est. Arrival</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr data-toggle="collapse" href="#collapseExample">
+                                        <td><i class="fa fa-angle-right" aria-hidden="true"></i><span>Gary Johanson</span></td>
+                                        <td>504872</td>
+                                        <td class="text-danger">Drive Later</td>
+                                        <td>home</td>
+                                        <td>LA</td>
+                                        <td class="text-danger text-right"><i class="fa fa-question-circle" aria-hidden="true"></i>1:48 PM</td>
+                                </tr>
+<!--
+                                <div class="collapse row" id="collapseExample">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-3"></div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-1"></div>
+                                </div>
+-->
+                                <tr class="collaps" id="collapseExample">
+                                        <td colspan="3">
+                                            <dl class="row">
+                                                <dd class="col-sm-2"><img class="td-face-img" src=image/face.png alt="driver"/></dd>
+                                                <dd class="col-sm-6"><span>DRIVER #2546</span> <br/> <span>Robert Doson</span><br/> <small class="text-muted">Mercedes-Benz 300s</small> </dd>
+                                                <dd class="col-sm-2 text-primary"><span style="white-space:nowrap; font-size:0.8em">TUE, OCT 09 </span></br><span class="h2">12:40</span><br><span class="text-muted">est</span><span>pm</span> </dd>
+                                            </dl>
+                                            <span class="text-danger">Drive route, but running a bit late, est. srrival in 3 MIN</span><br>
+                                            <span class="text-muted">We apologize for any inconvenience.</span><span class="text-danger">@12:52 PM</span>
+<!--
+                                            <dl class="row">
+                                                <dd class="col-sm-8"><span class="text-danger">Drive route, but running a bit late, est. srrival in 3 MIN</span></dd>
+                                                <dd class="col-sm-8"><span class="text-muted">We apologize for any inconvenience.</span><span class="text-danger">@12:52 PM</span></dd>
+                                            </dl>
+-->
+                                        </td>
+                                            
+                                        <td colspan="3"> 
+                                            <dl class="row">
+                                                <dd class="col-sm-2"><img src=image/car.png alt="driver"/> 
+                                                <dd class="col-sm-7"><span class="text-primary"><span class="start">A</span>LGA, T3, New York, NY</span><br><span class="stop1">1</span><span>Starbucks, 4001 Brodway Ave</span><br><span class="end">B</span> <span>Home, 2056 Islington Ave</span></dd>
+                                                <dd class="col-sm-2 text-right"><div class="settings-icon"><img class="settings-icon" src="image/settings.png"></div><br><div class="call-icon"><img  src="image/phone-call.png"></div></dd>
+                                            </dl>
+                                        </td>
+<!--                                        <td class="text-primary">TUE, OCT 09 </br><span class="h2">12:40</span><br><span class="text-muted">est</span><span>pm</span></td>-->
+<!--                                        <td ><img src=image/car.png alt="driver"/></td>-->
+<!--
+                                        <td ><span class="text-primary">LGA, T3, New York, NY</span><br><span>Starbucks, 4001 Brodway Ave</span><br> <span>Home, 2056 Islington Ave</span></td>
+                                        <td class="text-right"><img src="image/settings.png"><br><img src="image/phone-call.png"></td>
+-->
+                                </tr>
+<!--
+                                <tr>
+                                    <td colspan="6">
+                                        <dl class="row">
+                                              <dd class="col-sm-6">
+                                                  <img class="td-face-img" src=image/face.png alt="driver"/>
+                                                    <span>DRIVER #2546</span> <br/> <span>Robert Doson</span>Robert Doson <br/> <small class="text-muted">Mercedes-Benz 300s</small>
+                                                  TUE, OCT 09 </br><span class="h2">12:40</span><br><span class="text-muted">est</span><span>pm</span>
+                                            </dd>
+                                              <dd class="col-sm-3"><span>DRIVER #2546</span> <br/> <span>Robert Doson</span>Robert Doson <br/> <small class="text-muted">Mercedes-Benz 300s</small></dd>
+                                              <dd class="col-sm-1 text-primary">TUE, OCT 09 </br><span class="h2">12:40</span><br><span class="text-muted">est</span><span>pm</span></dd>
+                                        </dl>
+                                        <dl class="row">
+                                              <dd class="col-sm-1"><img class="td-face-img" src=image/face.png alt="driver"/></dd>
+                                              <dd class="col-sm-4"><span class="text-primary">LGA, T3, New York, NY</span><br><span>Starbucks, 4001 Brodway Ave</span><br> <span>Home, 2056 Islington Ave</span></dd>
+                                              <dd class="col-sm-1 text-right"><img src="image/settings.png"><br><img src="image/phone-call.png"></dd>
+                                        </dl>
+                                    </td>
+                                </tr>
+-->
+<!--
+                                <tr class="collapse" id="collapseExample">
+                                        <td colspan="3">
+                                            <span class="text-danger">Drive route, but running a bit late, est. srrival in 3 MIN</span><br>
+                                            <span class="text-muted">We apologize for any inconvenience.</span><span class="text-danger">@12:52 PM</span>
+                                        </td>
+                                    <td colspan="3">
+                                            <span class="text-danger">Drive route, but running a bit late, est. srrival in 3 MIN</span><br>
+                                            <span class="text-muted">We apologize for any inconvenience.</span><span class="text-danger">@12:52 PM</span>
+                                        </td>
+                                </tr>
+-->
+                                <tr>
+                                    <td><i class="fa fa-angle-right" aria-hidden="true"></i>John Smith</td>
+                                    <td>5048458</td>
+                                    <td class="text-danger">Drivee Waiting</td>
+                                    <td>home</td>
+                                    <td>LA</td>
+                                    <td class="text-danger text-right"><i class="fa fa-question-circle" aria-hidden="true"></i>1:45 PM</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-angle-right" aria-hidden="true"></i>Tracy Smith</td>
+                                    <td>2356987</td>
+                                    <td>Otto</td>
+                                    <td>home</td>
+                                    <td>La</td>
+                                    <td class="text-right">1:45 PM</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-angle-right" aria-hidden="true"></i>Gordon Jackson</td>
+                                    <td>9865368</td>
+                                    <td>Otto</td>
+                                    <td>Home</td>
+                                    <td>LA</td>
+                                    <td class="text-right">1:45 PM</td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-angle-right" aria-hidden="true"></i>Terry Wilk</td>
+                                    <td>898789</td>
+                                    <td>Home</td>
+                                    <td>Home</td>
+                                    <td>LA</td>
+                                    <td class="text-right">1:45 PM</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" class="text-right text-primary"><a href="#">Show more</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </main>
+                </div>
+                <div class="col-md-3">
+                    <aside id="aside">
+                        <div class="table-holder">
+                            <table class="table table-hover table-border">
+                                <thead class="dBLine">
+                                    <tr>
+                                        <th colspan="4" class="text-uppercase">Frequnet Passenger</th>
+                                        <th class="text-right text-primary"><a href="#">View all</a></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="td-img">
+                                            <div class="holder-face-img">
+                                                <div class="div-face-img"><img class="td-face-img" src="image/face.png" alt="face-img"/></div>
+                                                <div class="myself-green-btn"><div class="white-inside"></div></div>
+                                            </div>
+                                        </td>
+                                        <td colspan="2">Myself</td>
+                                        <td class="text-primary"><a href="#">View</a></td>
+                                        <td class="text-primary"><a href="#">Book For</a></td>
+                                    </tr>
+                                    <tr class="dBLine">
+                                        <td class="td-img">
+                                            <div class="holder-face-img">
+                                                <div class="div-face-img"><img class="td-face-img" src="image/user.png" alt="face-img"/></div>
+                                            </div>
+                                        </td>
+                                        <td colspan="2" class="text-uppercase">guest</td>
+                                        <td class="text-primary"><a href="#">View</a></td>
+                                        <td class="text-primary"><a href="#">Book For</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-img">
+                                            <div class="holder-face-img">
+                                                <div class="div-face-img"><p class="no-img">AM</p></div>
+                                                <div class="green-btn"></div>
+                                            </div>
+                                        </td>
+                                        <td colspan="2"><div>Arthur Mayers
+                                            <br/><small class="text-muted">CEO</small></div>
+                                          </td>
+                                        </td>
+                                        <td class="text-primary"><a href="#">View</a></td>
+                                        <td class="text-primary"><a href="#">Book For</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-img">
+                                            <div class="holder-face-img">
+                                                <div class="div-face-img"><img class="td-face-img" src="image/face.png" alt="face-img"/></div>
+                                                <div class="green-btn"></div>
+                                            </div>
+                                        </td>
+                                        <td colspan="2">Arthur Mayers
+                                            <br/> <small class="text-muted">Project Menager</small></td>
+                                        <td class="text-primary"><a href="#">View</a></td>
+                                        <td class="text-primary"><a href="#">Book For</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-img">
+                                            <div class="holder-face-img">
+                                                <div class="div-face-img"><img class="td-face-img" src="image/face.png" alt="face-img"/></div>
+                                                <div class="green-btn"></div>
+                                            </div>
+                                        </td>
+                                        <td colspan="2">Arthur Mayers
+                                            <br/> <small class="text-muted">CEO</small></td>
+                                        <td class="text-primary"><a href="#">View</a></td>
+                                        <td class="text-primary"><a href="#">Book For</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-img">
+                                            <div class="holder-face-img">
+                                                <div class="div-face-img"><img class="td-face-img" src="image/face.png" alt="face-img"/></div>
+                                                <div class="violet-btn"></div>
+                                            </div>
+                                        </td>
+                                        <td colspan="2">Arthur Mayers
+                                            <br/><small class="text-muted">Project Menager</small></td>
+                                        <td class="text-primary"><a href="#">View</a></td>
+                                        <td class="text-primary"><a href="#">Book For</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="text-left text-primary"><a href="#">Add a Passenger</a></td>
+                                        <td class="text-right text-primary"><a href="#">Show more</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-holder">
+                            <table class="table table-hover table-border">
+                                <thead class="dBLine">
+                                    <tr>
+                                        <th colspan="4" class="text-uppercase">Groups</th>
+                                        <th class="text-right text-primary"><a href="">View all</a></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="td-img">
+                                            <div class="holder-face-img">
+                                                <div class="div-face-img"><p class="no-img">AM</p></div>
+                                                <div class="green-btn"></div>
+                                            </div>
+                                        </td>
+                                        <td colspan="3">My passengers</td>
+                                        <td class="text-primary text-right"><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-img">
+                                            <div class="holder-face-img">
+                                                <div class="div-face-img"><p class="no-img">AM</p></div>
+                                                <div class="green-btn"></div>
+                                            </div>
+                                        </td>
+                                        <td colspan="3" class="text-uppercase">Sales Team</td>
+                                        <td class="text-primary text-right"><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td-img">
+                                            <div class="holder-face-img">
+                                                <div class="div-face-img"><p class="no-img">AM</p></div>
+                                                <div class="green-btn"></div>
+                                            </div>
+                                        </td>
+                                        <td colspan="3">Arthur Mayers
+                                            <br/> <small class="text-muted">CEO</small></td>
+                                        <td class="text-primary text-right"><a href="#">View</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4" class="text-left text-primary"><a href="#">Add a Group</a></td>
+                                        <td class="text-right text-primary"><a href="#">Show more</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-holder"> <i class="fa fa-times close" aria-hidden="true"></i>
+                            <div class="reward-img"> <img src="image/medal.png" alt="reward-img" /> </div>
+                            <div class="reward-content">
+                                <h4 class="text-uppercase">double reward points</h4>
+                                <h5 class="text-muted">until November 26, 2016</h5>
+                                <hr/>
+                                <p> This week only! Double AA, IHG or United points on rides in NYC! </p>
+                            </div>
+                        </div>
+                        <div class="table-holder">
+                            <table class="table table-hover table-border">
+                                <tr>
+                                    <td colspan="4" class="text-left">Latest Nostrification</td>
+                                    <td class="text-right text-primary"><a href="#">Show more</a></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+
+</html>

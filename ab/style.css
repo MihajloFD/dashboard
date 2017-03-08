@@ -1,0 +1,387 @@
+body {
+  background: #EFF2F6;
+  font-family: Helvetica, Arial, sans-serif; }
+
+#main,
+#aside {
+  background: white;
+  margin-top: 30px; }
+
+#main {
+  margin-left: 30px; }
+
+.bg-inverse {
+  background-color: #1D2531 !important; }
+
+/* Main navbar */
+.main-navbar {
+  height: 80px;
+  box-shadow: 0 4px 2px 1px rgba(0, 0, 0, 0.38); }
+
+/* logo */
+.navbar-brand {
+  max-width: 230px; }
+  .navbar-brand img {
+    width: 100%; }
+
+/* business */
+#dropdownMenu1 {
+  font-size: 28px;
+  line-height: 33px;
+  color: #9AB0D4; }
+
+.business-btn {
+  font-size: 28px;
+  line-height: 33px;
+  color: #9AB0D4 !important; }
+
+/* book a ride */
+.book-btn-dropdown .book-btn {
+  display: inline-block;
+  color: #fff;
+  background: #4990E2;
+  width: 176px;
+  height: 48px;
+  line-height: 48px;
+  font-size: 18px;
+  border-radius: 0;
+  border-color: transparent; }
+  .book-btn-dropdown .book-btn:hover {
+    cursor: pointer; }
+.book-btn-dropdown .dropdown-menu {
+  left: 30px; }
+.book-btn-dropdown .dropdown-item {
+  width: 176px;
+  font-size: 0.75em; }
+.book-btn-dropdown .text-muted {
+  font-size: 0.55em; }
+
+/* notification*/
+.notification-btn .not-btn-holder {
+  position: relative;
+  width: 23px; }
+  .notification-btn .not-btn-holder img {
+    width: 100%; }
+  .notification-btn .not-btn-holder .no-notification {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 20px;
+    color: #FFFFFF;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    right: -8px; }
+
+.notification-dropdown {
+  border-radius: 0;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2); }
+  .notification-dropdown .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid white;
+    position: absolute;
+    top: -20px;
+    right: 22px; }
+  .notification-dropdown .warning-item {
+    background-color: #FFF6F6; }
+  .notification-dropdown .dropdown-item {
+    max-width: 400px;
+    margin: 0 20px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px 1px rgba(239, 242, 246, 0.6); }
+    .notification-dropdown .dropdown-item p {
+      overflow: hidden;
+      text-overflow: ellipsis; }
+  .notification-dropdown .show {
+    padding-right: 20px; }
+
+/* user */
+.user-avatar-holder {
+  position: relative; }
+  .user-avatar-holder .user-avatar {
+    color: whitesmoke;
+    background: #D7D7D7;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 17px;
+    text-transform: uppercase; }
+  .user-avatar-holder .yellow-btn {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #F5A623;
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    border: 3px solid #1D2531; }
+    .user-avatar-holder .yellow-btn .inside {
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      background-color: #1D2531;
+      position: absolute;
+      bottom: 3px;
+      right: 3px; }
+
+.user_info {
+  font-size: 16px;
+  text-align: left;
+  height: 64px; }
+  .user_info .name {
+    color: #488DDE;
+    margin-bottom: 0 !important; }
+  .user_info .profession {
+    color: #7F90A4;
+    margin-bottom: 0 !important; }
+
+.down {
+  color: gray; }
+
+.serachForm {
+  border-bottom: 2px solid grey;
+  margin: 0 30px; }
+  .serachForm input[type] {
+    background: #292B2C;
+    border-color: transparent;
+    width: 90%; }
+  .serachForm .iconSearch {
+    color: gray;
+    background: #292B2C;
+    border: none;
+    cursor: pointer;
+    float: right;
+    width: 10%; }
+
+.redbtn {
+  height: 29px;
+  width: 29px;
+  background: #DA3A1D;
+  color: white;
+  display: inline-block;
+  border-radius: 50%;
+  line-height: 29px;
+  text-align: center;
+  font-weight: bold;
+  float: right;
+  font-size: 0.9em;
+  box-shadow: inset 1px 1px 7px 0px rgba(0, 0, 0, 0.75); }
+
+.bluebtn {
+  height: 33px;
+  width: 42px;
+  background: #3A92F1;
+  color: white;
+  display: inline-block;
+  border-radius: 46%;
+  line-height: 33px;
+  text-align: center;
+  float: right;
+  font-size: 0.9em;
+  box-shadow: inset 1px 1px 7px 0px rgba(0, 0, 0, 0.75); }
+
+.home {
+  padding: 20px;
+  display: inline-block;
+  float: left; }
+
+#v-manu {
+  padding-left: 0;
+  padding-right: 0; }
+
+.vbtn {
+  padding: 20px;
+  padding-left: 30px;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  border-left: 5px solid #292B2C; }
+  .vbtn:hover {
+    background: rgba(73, 144, 226, 0.5);
+    border-color: #5489E1; }
+  .vbtn .fa-nav {
+    padding-right: 25px; }
+
+.active-blue {
+  background: rgba(73, 144, 226, 0.5);
+  border-color: #5489E1;
+  color: #5489E1; }
+
+.warning {
+  border-left: 10px solid red; }
+  .warning .warning-content {
+    padding: 10px; }
+    .warning .warning-content h4 {
+      color: red;
+      font-size: 1.3em;
+      line-height: 1em; }
+    .warning .warning-content p {
+      font-size: 1.1em; }
+
+.map iframe {
+  width: 95%;
+  margin: 20px;
+  background: grey;
+  min-height: 400px; }
+
+.number-nav li {
+  width: 218px;
+  border-bottom: 5px solid lightgray; }
+  .number-nav li:hover {
+    border-color: dodgerblue; }
+.number-nav li.active {
+  border-color: dodgerblue; }
+
+.num-ride {
+  font-size: 50px;
+  float: left; }
+
+.text-ride {
+  display: inline-block;
+  text-transform: uppercase;
+  padding-top: 15px; }
+
+.no-img {
+  color: whitesmoke;
+  background: #D7D7D7;
+  text-align: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 23px;
+  margin-bottom: 0; }
+
+.table-holder {
+  border-radius: 5px;
+  box-shadow: 2px 3px 9px 0px rgba(0, 0, 0, 0.11);
+  padding: 35px 25px 0 25px; }
+
+.dBLine {
+  border-bottom: 6px double #E9EDF0; }
+
+.td-face-img {
+  display: block;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px; }
+
+/* user image style */
+.holder-face-img {
+  position: relative;
+  height: 50px;
+  width: 50px; }
+  .holder-face-img .td-face-img {
+    display: block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px; }
+  .holder-face-img .green-btn {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #3CA76A;
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    border: 3px solid #fff; }
+  .holder-face-img .violet-btn {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #9300FD;
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    border: 3px solid #fff; }
+  .holder-face-img .myself-green-btn {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #3CA76A;
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    border: 3px solid #fff; }
+    .holder-face-img .myself-green-btn .white-inside {
+      height: 8px;
+      width: 8px;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      bottom: 3px;
+      right: 3px; }
+
+/* end */
+.reward-img {
+  width: 100px;
+  height: 150px;
+  float: left;
+  text-align: center;
+  line-height: 100px; }
+  .reward-img img {
+    width: 100%; }
+
+/* top border default turn off */
+.table th {
+  border-top-color: transparent; }
+
+td.td-img {
+  padding: 0; }
+
+.table td,
+.table th {
+  vertical-align: middle;
+  line-height: 14px; }
+
+.table .td-img {
+  padding: 2px 0; }
+
+/* passenger details */
+.start {
+  color: #fff;
+  background: #5489E1;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.stop1 {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  border-radius: 2px;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.end {
+  color: #fff;
+  background: #000;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center; }
+
+.settings-icon,
+.call-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 137px 2px rgba(239, 242, 246, 0.75);
+  vertical-align: middle; }
+
+/*# sourceMappingURL=style.css.map */

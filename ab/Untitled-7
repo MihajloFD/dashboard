@@ -1,0 +1,75 @@
+            #if( $service_group.service_float_image.service_float_left.data == 'true' || $service_group.service_float_image.service_float_left.data == 'TRUE' )
+            <div class="col-sm-4 bleed-middle hidden-xs" style="background-color: rgb(238,249,253);height: 350px; margin-top: 40px;">
+                <img src=$service_group.service_float_image.data style=$service_group.service_float_image.service_float_image_style.data />
+            </div>
+            #end
+            <div class="mob-img visible-xs col-sm-10" style="background-color: rgb(238,249,253);">
+                <img src=$service_group.service_float_image.data style=$service_group.service_float_image.service_float_image_style.data />
+            </div>
+            <div class="col-sm-8 bleed-middle" style="background-color: rgb(238,249,253);height: 350px; margin-top: 40px;">
+                <div class="table">
+                    <div class="cell">
+                         #if( $service_group.service_float_image.service_float_left.data == 'true' || $service_group.service_float_image.service_float_left.data == 'TRUE' )
+                        <div class="left-float">
+                        #else
+                        <div class="right-float">
+                        #end
+                            <h3 class="floater">
+                                $service_group.service_float_image.service_float_title.data</h3>
+                            <h4 class="floater">
+                                $service_group.service_float_image.service_float_subtitle.data</h4>
+                            <p class="floater">
+                                $service_group.service_float_image.service_float_content.data</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            #if( $service_group.service_float_image.service_float_left.data.equals('true') || $service_group.service_float_image.service_float_left.data.equals('TRUE') )
+            
+            #else
+            <div class="col-sm-4 bleed-middle hidden-xs" style="background-color: rgb(238,249,253);height: 350px; margin-top: 40px;">
+                <img src=$service_group.service_float_image.data style=$service_group.service_float_image.service_float_image_style.data />
+            </div>
+            #end
+            
+            
+            
+            
+            
+            
+            
+            
+            <div class="visible-xs col-sm-12">
+                <img src=$service_group.service_float_image.data style=$service_group.service_float_image.service_float_image_style.data />
+            </div>
+            #if( $service_group.service_float_image.service_float_left.data == 'true' || $service_group.service_float_image.service_float_left.data == 'TRUE' )
+
+            <div class="col-sm-4 bleed-middle" style="background-color: rgb(238,249,253);height: 350px; margin-top: 40px;">
+                <img src=$service_group.service_float_image.data style=$service_group.service_float_image.service_float_image_style.data />
+            </div>
+            #end
+            <div class="col-sm-8 bleed-middle" style="background-color: rgb(238,249,253);height: 350px; margin-top: 40px;">
+                <div class="table">
+                    <div class="cell">
+                         #if( $service_group.service_float_image.service_float_left.data == 'true' || $service_group.service_float_image.service_float_left.data == 'TRUE' )
+                        <div class="left-float">
+                        #else
+                        <div class="right-float">
+                        #end
+                        <h3 class="floater">
+                            $service_group.service_float_image.service_float_title.data</h3>
+                        <h4 class="floater">
+                            $service_group.service_float_image.service_float_subtitle.data</h4>
+                        <p class="floater">
+                            $service_group.service_float_image.service_float_content.data</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            #if( $service_group.service_float_image.service_float_left.data.equals('true') || $service_group.service_float_image.service_float_left.data.equals('TRUE') )
+            
+            #else
+            <div class="col-sm-4 bleed-middle" style="background-color: rgb(238,249,253);height: 350px; margin-top: 40px;">
+                <img src=$service_group.service_float_image.data style=$service_group.service_float_image.service_float_image_style.data />
+            </div>
+            #end
